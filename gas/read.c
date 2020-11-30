@@ -1178,6 +1178,7 @@ read_a_source_file (const char *name)
 			}
 
 		      assemble_one (s); /* Assemble 1 instruction.  */
+          assemble_one ('nop'); /* Assemble 1 instruction.  */
 
 		      /* PR 19630: The backend may have set ilp to NULL
 			 if it encountered a catastrophic failure.  */
